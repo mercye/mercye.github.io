@@ -41,22 +41,6 @@ body {
   margin: 30px 0;
 }
 
-/* Generate the extra small columns  */
-.make-xs-column(@columns; @gutter: @grid-gutter-width) {
-  position: relative;
-  /* Prevent columns from collapsing when empty */
-  min-height: 1px;
-  /* Inner gutter via padding */
-  padding-left:  (@gutter / 2);
-  padding-right: (@gutter / 2);
-
-  /* Calculate width based on number of columns available */
-  @media (min-width: @grid-float-breakpoint) {
-    float: left;
-    width: percentage((@columns / @grid-columns));
-  }
-}
-
 /* Main marketing message and sign up button */
 .jumbotron {
   text-align: center;
