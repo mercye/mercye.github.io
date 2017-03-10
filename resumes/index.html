@@ -12,18 +12,18 @@
     <title>Mercy Emelike</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Bootstrap theme -->
-    <link href="/dist/css/bootstrap-theme.min.css" rel="stylesheet">
+    <link href="../dist/css/bootstrap-theme.min.css" rel="stylesheet">
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <link href="/assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+    <link href="../assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="theme.css" rel="stylesheet">
+    <link href="../theme.css" rel="stylesheet">
 
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
     <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
-    <script src="/assets/js/ie-emulation-modes-warning.js"></script>
+    <script src="../assets/js/ie-emulation-modes-warning.js"></script>
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -55,9 +55,13 @@
       </div>
     </nav>
 
-    <object data="resume170309.pdf" type="application/pdf">
-      <embed src="resume170309.pdf" type="application/pdf" />
-    </object>
+    <!-- insert just before the closing body tag </body> -->
+    <script src='/PDFObject-master/pdfobject.js'></script>
+    <script>
+
+    PDFObject.embed("mercye.github.io/resumes/resume170309.pdf");
+    </script>
 
   </body>
+
 </html>
